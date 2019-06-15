@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>The Historic Citi of London Scavenger Hunt</title>
+<style>
+body {
+  background-color: #f2eecb;
+}
+@font-face {
+  font-family: oldefont;
+  src: url(oldengl.woff);
+}
+h1 {
+  font-family: oldefont;
+  text-align: center;
+}
+h2 {
+  font-family: oldefont;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<h1>The Historic Citi of London Scavenger Hunt</h1>
+<h2>Come and explore the exciting history that surrounds our London Innovation Lab, going back thousands of years.</h2>
+<p>How to participate:</p>
+<ol>
+<li>Download the Huntzz app on <a href="https://itunes.apple.com/gb/app/huntzz-treasure-hunts/id442168071?mt=8" target="_blank">iPhone</a> or <a href="https://play.google.com/store/apps/details?id=com.huntzz&hl=en_GB" target="_blank">Android</a></li>
+<li>In the App Settings, enable "Multiple Choice Questions" and disable "Show Simple Clues"</li>
+<li><a href="javascript:copyHunt();">Click here</a> to copy the hunt to the clipboard. (It's encrypted, so no sense peeking.)</li>
+<li>In the App, tap Import, and paste the text into the box provided.</li>
+<li>Open the Historic Citi of London.</li>
+<li>Select Cryptic Clues, and enable multiple choice.</li>
+<li>Follow the clues to your virtual treasure.</li>
+</ol>
+<p>For each question, you will find the answer on a plaque, statue, monument, or something else at or near the location specified.  Each question will have four possible answers, one of which will be correct.</p>
+<p>You will receive five (virtual) gold coins if you answer correctly on your first attempt, four on your second attempt, or two on your third attempt.  You will also get to see an interesting fact about London's history, related to the question you just answered.</p>
+<p>The team that shows the most gold coins at the final stop will be victorious.</p>
+<h1>Good luck!</h1>
+<p>Final notes:</p>
+<ul>
+<li>This is not a race.  If there is a tie for the most coins, there will be a tiebreak question.</li>
+<li>Take care when crossing busy roads.  Modern cars are faster than mule-drawn carts, and can do more damage.</li>
+<li>When the answer to a clue is in a pub, please do them a courtesy by buying a drink.</li>
+<li>Aim to be at the final stop by 20:30.</li>
+<li>If you have not signed up with Joe in advance, then we cannot be held responsible for your participation in the hunt.</li>
+</ul>
+<script>
+function copyHunt() {
+  var copyText = document.getElementById("hunttext");
+  huntinput.setAttribute("value", copyText.innerHTML);
+  copyText.style.visibility = "visible";
+  copyText.select();
+  document.execCommand("copy");
+  copyText.style.visibility = "hidden";
+  alert('Hunt copied to clipboard');
+}
+</script>
+<input id="huntinput" style="visibility:hidden" />
+<textarea id="hunttext" style="visibility:hidden">
+----BEGIN HUNTZZ DATA----
+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
+-----END HUNTZZ DATA-----
+</textarea>
+</body>
+</html>
